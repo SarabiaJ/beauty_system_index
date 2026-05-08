@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Solicitar Beauty System</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/estilos.css"> 
+    </head>
+    <body>
+
+    <div class="container">
+        <div class="section-card">
+            <h2 class="text-center mb-4">Solicitud de Registro</h2>
+            <p class="text-muted text-center mb-5">Completa los datos de tu negocio y nos pondremos en contacto contigo.</p>
+            
+            <form action="procesar_solicitud.php" method="POST">
+                <div class="mb-4">
+                    <h5 class="border-bottom pb-2 mb-4">Información del Propietario</h5>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="tipo_documento" class="form-label">Tipo de Documento</label>
+                            <select class="form-select" id="tipo_documento" name="tipo_documento" required>
+                                <option value="" selected disabled>Seleccione...</option>
+                                <option value="CC">Cédula de Ciudadanía</option>
+                                <option value="NIT">NIT</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="documento_identidad" class="form-label">Número de Documento</label>
+                            <input type="text" class="form-control" id="documento_identidad" name="documento_identidad" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="nombre_dueno" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="nombre_dueno" name="nombre_dueno" required>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="correo" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="correo" name="correo" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5 class="border-bottom pb-2 mb-4">Información del Negocio</h5>
+                    <div class="mb-3">
+                        <label for="nombre_negocio" class="form-label">Nombre del Establecimiento</label>
+                        <input type="text" class="form-control" id="nombre_negocio" name="nombre_negocio" required>
+                    </div>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary-custom btn-lg">Enviar Solicitud</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -68,3 +68,40 @@ body {
 .bg-soft {
     background-color: #f1f5f9;
 }
+
+/* --- ESTILOS PARA EL FORMULARIO DE SOLICITUD --- */
+
+.section-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.section-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.section-card h2, 
+.section-card h5, 
+.form-label {
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #1e3a8a;
+    box-shadow: 0 0 0 0.25rem rgba(30, 58, 138, 0.15);
+}
+
+.btn-primary-custom {
+    background-color: #1e3a8a;
+    border: none;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+}
