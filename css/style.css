@@ -97,20 +97,28 @@ body {
 }
 
 .form-control, .form-select {
-    padding: 15px 25px; 
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px 25px;
     font-size: 1.1rem;
     border-radius: 12px;
     border: 2px solid #dee2e6;
     color: #555;
-    
-    text-align: center;       
-    text-align-last: center;    
-    
+
+    text-align: center;
+    text-align-last: center;
+
     transition: all 0.3s ease;
+    display: block;
 }
 
 .form-control::placeholder {
     text-align: center;
+}
+
+.row {
+    justify-content: center;
 }
 
 .btn-primary-custom {
